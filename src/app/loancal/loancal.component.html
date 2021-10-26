@@ -1,0 +1,21 @@
+<div class="form-container">
+    <div class="container">
+      <form>
+       <label>Principle Amount</label><input type="text" class="i1" #pamount><br><br>
+       <label>Month</label><input type="text" class="i1" #month><br><br>
+       <label>Rate of Interest</label><input type ="text"  class="i1" [value]="selectedValue" #roi><br><br>
+        <select #sele (change)="cha(sele.value)">
+          <option value="7">Vehicle</option>
+          <option value="9">Home</option>
+          <option value="12">Personal</option>
+          <option value="10">Education</option>
+        </select><br>
+        <div class="button">
+        <input type="button" class="btn primary" value="calculate" (click)="calculate(pamount.value,month.value,roi.value)">
+        <input type="button" class="btn secondary" value="Reset" (click)="reset()">
+
+        </div>
+      </form>
+      <p>interest  :<span>{{interest}}</span></p>
+    </div>
+  </div>

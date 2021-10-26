@@ -1,0 +1,40 @@
+label{
+    width: 100%;
+    display: inline-block;
+
+}
+
+.form-container{
+    
+    width: 100%;
+    
+}
+.container{
+    width: 400px;
+    border: 1px solid;
+    padding: 40px;
+    margin-left: 500px;
+    margin-top: 50px;
+    box-shadow: 5px 10px 5px 10px;
+
+}
+.i1{
+    padding: 10px;
+    width: 250px;
+    outline: none;
+}
+
+.btn{
+    width: 90px;
+    margin: 30px;
+    height: 30px;
+    padding: 0px;
+}
+
+.primary{
+    background-color:lawngreen;
+}
+
+.secondary{
+    background-color:indianred;
+}
